@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700');
+
+/**
+ * Layout
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+        display: block;
+        padding: 4em 0 1px;
+        text-align: center;
+    }
+    header h1, header h2 {
+        font-weight: lighter;
+    }
+    header h1 {
+        letter-spacing: -2px;
+        font-size: 3.2em;
+        text-shadow: 0 1px 0 white;
+    }
+    header h2 {
+        font-size: 1.5em;
+        letter-spacing: -1px;
+        opacity: .7;
+    }
+    header h1 img {
+        margin-bottom: 9px;
+        vertical-align: middle;
+    }
+    header a {
+        margin-bottom: 3em;
+}
+
+#screenshot {
+        position: relative;
+        margin: 4em 0;
+        background: url('../img/stripe.jpg') center no-repeat;
+    }
+    #screenshot img {
+        max-width: 100%;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+}
+
+main section {
+        display: block;
+        position: relative;
+        padding: 3em;
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+    #introduction {
+        background: #F4EADF;
+        padding: 0 3em;
+    }
+    #introduction .inner {
+        background: url('../img/electron.png') left no-repeat;
+        padding: 3em 0 3em 220px;
+    }
+    #fuzzy_stone_placement {
+        background-image: url('../img/fuzzy_stone_placement.gif'),
+            linear-gradient(to left, #CA933A 530px, #CA933A 540px, transparent 540px);
+    }
+    #fuzzy_stone_placement .inner { padding-right: 530px; }
+    #find_move {
+        background: #F4EADF;
+        position: relative;
+    }
+    #find_move .inner { padding-top: 40px; }
+    #find_move::after {
+        position: absolute;
+        content: '';
+        display: block;
+        height: 50px;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: url('../img/find_move_right.png') right no-repeat,
+            #0050C0 url('../img/find_move.png') left no-repeat;
+    }
+    #game_graph {
+        background: #111 url('../img/game_graph.png') left top no-repeat;
+    }
+    #game_graph h3, #game_graph a, #gtp_engines h3, #gtp_engines a { color: #eee; }
+    #game_graph p, #gtp_engines p { color: #bbb; }
+    #game_graph .inner, #gtp_engines .inner { padding-left: 211px; }
+    #intelligent_scoring_tool {
+        background: #FBF593 url('../img/intelligent_scoring_tool.png') right top no-repeat;
+        color: #333;
+    }
+    #intelligent_scoring_tool .inner { padding-right: 370px; }
+    #sgf_editing_tools {
+        background: #C4BD64 url('../img/sgf_editing_tools.png') center 10px no-repeat;
+    }
+    #gtp_engines {
+        background: #181818 url('../img/gtp_engines.png') left bottom no-repeat;
+    }
+    main .inner {
+        box-sizing: border-box;
+        margin: 0 auto;
+        max-width: 980px;
+}
+
+#download {
+        text-align: center;
+    }
+    #download a, header a {
+        display: inline-block;
+        border: 3px solid #26292C;
+        padding: 5px 30px;
+        font-size: 1.2em;
+        letter-spacing: -1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background .2s, color .2s, border-color .2s, top .2s;
+    }
+    #download a:not(:last-child), header a:not(:last-child) {
+        margin-right: .5em;
+    }
+    #download a:hover, header a:hover {
+        background: #0050C0;
+        border-color: #0050C0;
+        color: white;
+}
+
+
+footer {
+        color: #5A5448;
+        padding-bottom: 4em;
+        text-align: center;
+    }
+    footer p {
+        margin: 2em 0;
+}
+
+/**
+ * Typography
+ */
+
+body {
+    background: #E3D9CF url('../img/background.png') fixed;
+    color: #383226;
+    font: 100%/1.7 'Open Sans', 'Trebuchet MS', sans-serif;
+}
+
+h3, p {
+    margin: 1em 0;
+}
+
+h3 {
+        color: black;
+        font-size: 1.4em;
+        font-weight: lighter;
+    }
+    h3:first-child {
+        margin-top: .5em;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+        position: relative;
+        color: black;
+        top: 0;
+        transition: top .2s;
+    }
+    a:active {
+        top: 2px;
+}
