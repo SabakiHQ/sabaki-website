@@ -82,7 +82,7 @@ main section {
             #0050C0 url('../img/find_move.png') left no-repeat;
     }
     #game_graph {
-        background: #111 url('../img/game_graph.png') left top no-repeat;
+        background: #111 url('../img/game_graph.png') left no-repeat;
     }
     #game_graph h3, #game_graph a, #gtp_engines h3, #gtp_engines a { color: #eee; }
     #game_graph p, #gtp_engines p { color: #bbb; }
